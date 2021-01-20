@@ -105,25 +105,30 @@ class DemoNavbar extends React.Component {
                     </Col>
                   </Row>
                 </div>
+
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
+                  <NavItem>
+                    <NavLink href="/">Home</NavLink>
+                  </NavItem>
+
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <i className="ni ni-ui-04 d-lg-none mr-1" />
+                      <i className="ni ni-collection d-lg-none mr-1" />
                       <span className="nav-link-inner--text">About</span>
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu-xl">
                       <div className="dropdown-menu-inner">
                         <MediaMenu
-                          title="Me"
-                          description="Me"
+                          title="Experience"
+                          description="Experience"
                           color="green"
-                          icon="spaceship"
+                          icon="circle-08"
                         />
                         <MediaMenu
-                          title="Professional"
-                          description="Professional"
+                          title="Education"
+                          description="Education"
                           color="red"
-                          icon="spaceship"
+                          icon="paper-diploma"
                         />
                       </div>
                     </DropdownMenu>
@@ -131,32 +136,35 @@ class DemoNavbar extends React.Component {
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Resume</span>
-                    </DropdownToggle>
-                    <DropdownMenu>
-                      <DropdownItem to="/profile-page" tag={Link}>
-                        Experience
-                      </DropdownItem>
-                      <DropdownItem to="/login-page" tag={Link}>
-                        Eduaction
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <i className="ni ni-collection d-lg-none mr-1" />
                       <span className="nav-link-inner--text">Profile</span>
                     </DropdownToggle>
-                    <DropdownMenu>
-                      <DropdownItem to="/profile-page" tag={Link}>
-                        Profile
-                      </DropdownItem>
-                      <DropdownItem to="/login-page" tag={Link}>
-                        Login
-                      </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
-                        Register
-                      </DropdownItem>
+                    <DropdownMenu className="dropdown-menu-xl">
+                      <div className="dropdown-menu-inner">
+                        <DropdownItem to="/profile" tag={Link}>
+                          <MediaMenu
+                            title="Profile"
+                            description="Enter to Profile"
+                            color="green"
+                            icon="badge"
+                          />
+                        </DropdownItem>
+                        <DropdownItem to="/profile" tag={Link}>
+                          <MediaMenu
+                            title="Login"
+                            description="Access to your Account"
+                            color="green"
+                            icon="circle-08"
+                          />
+                        </DropdownItem>
+                        <DropdownItem to="/profile" tag={Link}>
+                          <MediaMenu
+                            title="Sign Up"
+                            description="Create User"
+                            color="red"
+                            icon="circle-08"
+                          />
+                        </DropdownItem>
+                      </div>
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </Nav>

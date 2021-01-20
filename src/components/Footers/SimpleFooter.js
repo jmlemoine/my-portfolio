@@ -41,9 +41,9 @@ class SimpleFooter extends React.Component {
                 <h3 className=" text-primary font-weight-light mb-2">
                   Thank you for checking my work!
                 </h3>
-                <h4 className=" mb-0 font-weight-light">
-                  Let's get in touch on any of these platforms.
-                </h4>
+                <h6 className=" mb-0 font-weight-light">
+                  Let's give you better content coming soon.
+                </h6>
               </Col>
               <Col className="text-lg-center btn-wrapper" lg="6">
                 <SocialMediaButtons
@@ -88,10 +88,7 @@ class SimpleFooter extends React.Component {
             <div className=" copyright">
               © {new Date().getFullYear()}
               {" by "}
-              <a
-                href="https://www.creative-tim.com?ref=adsr-footer"
-                target="_blank"
-              >
+              <a href="https://www.instagram.com/jmlemoin/" target="_blank">
                 Jean Melvin Lemoine
               </a>
             </div>

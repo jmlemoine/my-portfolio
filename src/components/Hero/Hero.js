@@ -46,7 +46,7 @@ class Hero extends React.Component {
                   <Col className="text-center" lg="6">
                     <img
                       alt="..."
-                      className="img-fluid"
+                      className="rounded-circle"
                       src={require("assets/img/brand/Me.jpg" /*"assets/img/brand/argon-react-white.png"*/)}
                       style={{ width: "200px" }}
                     />
